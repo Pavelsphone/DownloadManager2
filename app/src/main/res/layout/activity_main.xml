@@ -18,12 +18,19 @@
         android:layout_height="wrap_content"
         android:text="Скачать" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Загрузка начнется после нажатия кнопки"
-        android:textAlignment="center" />
+        android:hint="Поиск по загрузкам..." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>
+
 
